@@ -102,29 +102,23 @@
 .box{
   position:relative;
   border-radius:24px;
+  overflow:hidden;
   background:#fff;
   box-shadow:0 10px 30px rgba(0,0,0,0.08);
   padding:14px;
-
-  display:flex;
-  align-items:center;
-  justify-content:center;
-
-  overflow:visible;
 }
 
 .box img{
-  width:auto !important;
-  height:auto !important;
-
-  max-width:100%;
-  max-height:320px;
-
-  object-fit:contain !important;
-
+  width:100%;
+  height:auto;
   display:block;
   border-radius:18px;
 }
+
+.box.square img{
+  max-width:420px;
+  margin:auto;
+}    
     
 /* Label */
 .before::before,
@@ -260,11 +254,11 @@
   <section class="section">
     <div class="before-after">
 
-   <div class="box before">
+   <div class="box square after">
     <img src="assets/images/before-rangu-bacil.webp" alt="Before Product" />
   </div>
 
-  <div class="box after">
+ <div class="box square after">
     <img src="assets/images/after-rangu-bacil.webp" alt="After Product" />
   </div>   
 
