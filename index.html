@@ -143,18 +143,25 @@
       right: -150px;
     }
 
-    .hero::after {
-      content: "";
-      position: absolute;
-      width: 350px;
-      height: 350px;
+    .hero::after { 
+  content: ""; 
+  position: absolute; 
+  width: 350px; 
+  height: 350px; 
 
-      background: rgba(255,255,255,0.06);
-      border-radius: 50%;
+  background:
+    linear-gradient(
+      rgba(255,255,255,0.12),
+      rgba(255,255,255,0.12)
+    ),
+    url("assets/images/visual-hero.jpg") center/cover no-repeat;
 
-      bottom: -180px;
-      left: -120px;
-    }
+  border-radius: 50%;
+  opacity: 0.35;
+
+  bottom: -180px; 
+  left: -120px; 
+}
 
     .hero > * {
       position: relative;
